@@ -5,40 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 using BaggageSort.Types;
 using BaggageSort.ModelView.Commands;
+using BaggageSort.Model;
 
 namespace BaggageSort.ModelView
 {
     public class ViewModel : ViewModelBase
     {
-        public SortCommand sortCommand { get; set; }
-        public FlyCommand flyCommand { get; set; }
-        public OpenCloseCommand openCloseCommand { get; set; }
-        public FillFlightCommand fillFlightCommand { get; set; }
-        public GenerateLuggageCommand generateLuggageCommand { get; set; }
+        public SwitchStateCommand switchStateCommand { get; set; }
 
-        public void SortLuggage()
+        public ViewModel()
         {
-            //Need implementation
+            switchStateCommand = new SwitchStateCommand();
         }
 
-        public void Fly()
+        public void SwitchState(Terminal terminalToChange)
         {
-            //Need implementation
-        }
-
-        public void OpenClose()
-        {
-            //Need implementation
-        }
-
-        public void FillFlight()
-        {
-            //Need implementation
-        }
-
-        public Luggage GenerateLuggage()
-        {
-            return new Luggage();
+            if (terminalToChange.Locked)
+                terminalToChange.Locked = false;
+            else
+                terminalToChange.Locked = true;
+            OnPropertyChanged();
         }
     }
 }

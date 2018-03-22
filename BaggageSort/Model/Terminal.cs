@@ -23,6 +23,7 @@ namespace BaggageSort.Model
         public Enum Destination { get => destination; private set => destination = value; }
         public Queue<Luggage> LeftOverLuggage { get => leftOverLuggage; private set => leftOverLuggage = value; }
         public int CargoSize { get => cargoSize; private set => cargoSize = value; }
+        public bool Locked { get => locked; set => locked = value; }
 
         public Terminal(Enum _dest)
         {
@@ -37,7 +38,7 @@ namespace BaggageSort.Model
         /// <param name="_luggage"></param>
         public void HandleLuggage(Luggage _luggage)
         {
-            if (!locked && luggages.Count() < CargoSize)
+            if (!Locked && luggages.Count() < CargoSize)
                 luggages.Enqueue(_luggage);
             else
                 leftOverLuggage.Enqueue(_luggage);
@@ -49,6 +50,14 @@ namespace BaggageSort.Model
         private void Fly()
         {
             Debug.WriteLine($"Plane to {Destination.ToString()} is flying away");
+<<<<<<< HEAD
+            Locked = true;
+        }
+        public void SwitchState()
+        {
+            Debug.WriteLine("User locked the terminal");
+            Locked = true;
+=======
             FillFlight();
             locked = true;
             flightAvailable = false;
@@ -74,6 +83,7 @@ namespace BaggageSort.Model
                     await Task.Delay(TimeSpan.FromSeconds(30));
                 }
             }
+>>>>>>> bd6625e312a5dce69443b2915f57556e963855b5
         }
     }
 }
