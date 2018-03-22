@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BaggageSort.Types;
 
 namespace BaggageSort.Model
 {
@@ -39,11 +40,11 @@ namespace BaggageSort.Model
             {
                 for (int j = 0; j < terminalList.Count; j++)
                 {
-                    //if (luggageQueue[i].Destination == terminalList[j].Destination)
-                    //{
-                    //    terminalList.Add(luggageQueue[i]);
-                    //    break;
-                    //}
+                    if (luggageQueue.Peek().destination == (Destination)terminalList[j].Destination)
+                    {
+                        terminalList[i].Luggages.Enqueue(luggageQueue.Dequeue());
+                        break;
+                    }
                 }
             }
         }

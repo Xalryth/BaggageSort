@@ -98,6 +98,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ModelView\Commands\FillFlightCommand.cs" />
+    <Compile Include="ModelView\Commands\FlyCommand.cs" />
+    <Compile Include="ModelView\Commands\GenerateLuggageCommand.cs" />
+    <Compile Include="ModelView\Commands\OpenCloseCommand.cs" />
+    <Compile Include="ModelView\Commands\SortCommand.cs" />
     <Compile Include="ModelView\ViewModel.cs" />
     <Compile Include="ModelView\ViewModelBase.cs" />
     <Compile Include="Model\Reception.cs" />
@@ -284,7 +289,6 @@
     <Folder Include="bin\x64\Debug\" />
     <Folder Include="bin\x64\Release\" />
     <Folder Include="bin\x86\Release\" />
-    <Folder Include="ModelView\Commands\" />
     <Folder Include="obj\ARM\Debug\intermediatexaml\" />
     <Folder Include="obj\ARM\Debug\TempPE\" />
   </ItemGroup>
