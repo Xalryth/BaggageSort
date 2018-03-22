@@ -25589,6 +25589,7 @@
       ],
       "configFilePaths": [
         "C:\\Users\\ZBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 3fab999f3b94c2943b220261374db1318b621164
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
