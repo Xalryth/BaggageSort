@@ -16,6 +16,10 @@
         <ListView Grid.Column="0">
             <!--  -->
         </ListView>
-        
+        <ListView Grid.Column="1" >
+            <ListViewItem>
+                
+            </ListViewItem>
+        </ListView>
         </Grid>
 </Page>
