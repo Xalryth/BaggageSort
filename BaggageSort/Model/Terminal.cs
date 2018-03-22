@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BaggageSort.Model
 {
-    class Terminal
+    public class Terminal
     {
         private Queue<Luggage> luggages;
         private DateTime leaveDate;
