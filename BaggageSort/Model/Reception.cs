@@ -15,10 +15,13 @@ namespace BaggageSort.Model
 
         public Reception() { }
 
+        public uint DateStep { get => dateStep; set => dateStep = value; }
+        public Random Rnd { get => rnd; set => rnd = value; }
+        public uint Count { get => count; set => count = value; }
+
         public Luggage GenerateLuggage() {
-            count++;
-            dateStep++;
-            return new Luggage(count, new DateTime(0).AddMinutes(dateStep), (Destination)rnd.Next(0, Enum.GetNames(typeof(Destination)).Length - 1));
+            Count++;
+            return new Luggage(Count, new DateTime(DateStep).AddDays(Rnd.Next(0, 3)), (Destination)Rnd.Next(0, Enum.GetNames(typeof(Destination)).Length - 1));
         }
     }
 }
