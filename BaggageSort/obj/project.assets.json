@@ -25569,20 +25569,12 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\zbcpestr2\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
-=======
-    "C:\\Users\\ZBC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
->>>>>>> 19f035de13035ed7be5e0a104f424636674c4846
->>>>>>> 3fab999f3b94c2943b220261374db1318b621164
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
       "projectName": "BaggageSort",
       "projectPath": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
@@ -25595,21 +25587,6 @@
       ],
       "configFilePaths": [
         "C:\\Users\\zbcpestr2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\ZBC\\Source\\Repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "projectName": "BaggageSort",
-      "projectPath": "C:\\Users\\ZBC\\Source\\Repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "packagesPath": "C:\\Users\\ZBC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZBC\\Source\\Repos\\BaggageSort\\BaggageSort\\obj\\",
-      "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
-      ],
-      "configFilePaths": [
-        "C:\\Users\\ZBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 3fab999f3b94c2943b220261374db1318b621164
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
