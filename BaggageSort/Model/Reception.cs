@@ -9,15 +9,15 @@ namespace BaggageSort.Model
 {
     public class Reception
     {
-        uint count = 0;
-        uint dateStep = 0;
+        static uint count = 0;
+        private static uint dateStep = 0;
         Random rnd = new Random();
 
         public Reception() { }
-
-        public uint DateStep { get => dateStep; set => dateStep = value; }
+        
         public Random Rnd { get => rnd; set => rnd = value; }
-        public uint Count { get => count; set => count = value; }
+        public static uint Count { get => count; set => count = value; }
+        public static uint DateStep { get => dateStep; set => dateStep = value; }
 
         public Luggage GenerateLuggage() {
             Count++;

@@ -25569,26 +25569,38 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
+    "C:\\Users\\zbcpestr2\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+=======
     "C:\\Users\\ZBC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+>>>>>>> cd141b73447eedf1620b046c0ce34c83ad7a3dd7
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
+      "projectName": "BaggageSort",
+      "projectPath": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
+      "packagesPath": "C:\\Users\\zbcpestr2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\obj\\",
+=======
       "projectUniqueName": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
       "projectName": "BaggageSort",
       "projectPath": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
       "packagesPath": "C:\\Users\\ZBC\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\obj\\",
+>>>>>>> cd141b73447eedf1620b046c0ce34c83ad7a3dd7
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ZBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zbcpestr2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
