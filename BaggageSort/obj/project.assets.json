@@ -25569,38 +25569,12 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\zbcpestr2\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\zbcdedup1\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\zbcpestr2\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
-=======
-    "C:\\Users\\ZBC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
->>>>>>> 92b4c2ae58cbad8d73c35a780ae5f3d0c2978e7a
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
->>>>>>> bded0af29934a53f7b475bb6e48953be81d86619
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\zbcdedup1\\Documents\\GitHub\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "projectName": "BaggageSort",
-      "projectPath": "C:\\Users\\zbcdedup1\\Documents\\GitHub\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "packagesPath": "C:\\Users\\zbcdedup1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zbcdedup1\\Documents\\GitHub\\BaggageSort\\BaggageSort\\obj\\",
-=======
-<<<<<<< HEAD
->>>>>>> bded0af29934a53f7b475bb6e48953be81d86619
       "projectUniqueName": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
       "projectName": "BaggageSort",
       "projectPath": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
@@ -25613,29 +25587,8 @@
       ],
       "configFilePaths": [
         "C:\\Users\\zbcpestr2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-<<<<<<< HEAD
-=======
-=======
-      "projectUniqueName": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "projectName": "BaggageSort",
-      "projectPath": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "packagesPath": "C:\\Users\\ZBC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\obj\\",
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
-      "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
-      "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\zbcdedup1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
-        "C:\\Users\\ZBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 3fab999f3b94c2943b220261374db1318b621164
->>>>>>> 92b4c2ae58cbad8d73c35a780ae5f3d0c2978e7a
->>>>>>> bded0af29934a53f7b475bb6e48953be81d86619
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
       ],
       "originalTargetFrameworks": [
         "uap10.0.15063"
@@ -25650,18 +25603,12 @@
         }
       }
     },
-    "dependencies": {
-      "Microsoft.NETCore.UniversalWindowsPlatform": {
-        "target": "Package",
-        "version": "6.0.6"
-      }
-    },
     "frameworks": {
       "uap10.0.15063": {
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
-            "version": "6.0.6"
+            "version": "[6.0.6, )"
           }
         }
       }
