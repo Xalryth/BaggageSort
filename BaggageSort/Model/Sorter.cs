@@ -11,6 +11,7 @@ namespace BaggageSort.Model
     {
         private Queue<Luggage> luggageQueue = new Queue<Luggage>();
         private static List<Terminal> terminalList = new List<Terminal>();
+        
 
         public Queue<Luggage> LuggageQueue
         {
@@ -23,6 +24,7 @@ namespace BaggageSort.Model
             get { return terminalList; }
             set { terminalList = value; }
         }
+
         public Sorter()
         {
 
