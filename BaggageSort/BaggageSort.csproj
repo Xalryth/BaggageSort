@@ -98,10 +98,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ModelView\Commands\FillFlightCommand.cs" />
-    <Compile Include="ModelView\Commands\FlyCommand.cs" />
     <Compile Include="ModelView\Commands\GenerateLuggageCommand.cs" />
-    <Compile Include="ModelView\Commands\OpenCloseCommand.cs" />
+    <Compile Include="ModelView\Commands\HandleLuggageCommand.cs" />
+    <Compile Include="ModelView\Commands\SwitchStateCommand.cs" />
     <Compile Include="ModelView\Commands\SortCommand.cs" />
     <Compile Include="ModelView\ViewModel.cs" />
     <Compile Include="ModelView\ViewModelBase.cs" />
