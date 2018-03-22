@@ -122,7 +122,6 @@ C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\bin\x86\Debug\System
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\BaggageSort.csprojResolveAssemblyReference.cache
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\App.g.i.cs
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\App.g.cs
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\MainPage.g.i.cs
@@ -211,3 +210,4 @@ C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\qualif
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\BaggageSort.csprojResolveAssemblyReference.cache

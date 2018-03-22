@@ -12,12 +12,23 @@ namespace BaggageSort.ModelView
 {
     public class ViewModel : ViewModelBase
     {
-        public ObservableCollection<Sorter> sorterCollection = new ObservableCollection<Sorter>();
+        private ObservableCollection<Sorter> sorterCollection = new ObservableCollection<Sorter>();
 
         public SwitchStateCommand switchStateCommand { get; set; }
+        public ObservableCollection<Sorter> SorterCollection { get => sorterCollection; set => sorterCollection = value; }
 
         public ViewModel()
         {
+            for (int i = 0; i < 10; i++)
+            {
+                sorterCollection.Add(new Sorter());
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Sorter.TerminalList.Add(new Terminal(Destination.Bornholm));
+                Sorter.TerminalList.Add(new Terminal(Destination.NewYork));
+                Sorter.TerminalList.Add(new Terminal(Destination.Dubai));
+            }
             switchStateCommand = new SwitchStateCommand();
         }
 

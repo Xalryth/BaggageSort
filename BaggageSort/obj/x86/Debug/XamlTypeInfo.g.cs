@@ -132,23 +132,31 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "BaggageSort.ModelView.ViewModel";
             _typeNameTable[1] = "BaggageSort.ModelView.ViewModelBase";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "BaggageSort.ModelView.Commands.SwitchStateCommand";
-            _typeNameTable[4] = "BaggageSort.MainPage";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[6] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[4] = "System.Collections.ObjectModel.ObservableCollection`1<BaggageSort.Model.Sorter>";
+            _typeNameTable[5] = "System.Collections.ObjectModel.Collection`1<BaggageSort.Model.Sorter>";
+            _typeNameTable[6] = "BaggageSort.Model.Sorter";
+            _typeNameTable[7] = "System.Collections.Generic.Queue`1<BaggageSort.Types.Luggage>";
+            _typeNameTable[8] = "BaggageSort.MainPage";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::BaggageSort.ModelView.ViewModel);
             _typeTable[1] = typeof(global::BaggageSort.ModelView.ViewModelBase);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::BaggageSort.ModelView.Commands.SwitchStateCommand);
-            _typeTable[4] = typeof(global::BaggageSort.MainPage);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[4] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::BaggageSort.Model.Sorter>);
+            _typeTable[5] = typeof(global::System.Collections.ObjectModel.Collection<global::BaggageSort.Model.Sorter>);
+            _typeTable[6] = typeof(global::BaggageSort.Model.Sorter);
+            _typeTable[7] = typeof(global::System.Collections.Generic.Queue<global::BaggageSort.Types.Luggage>);
+            _typeTable[8] = typeof(global::BaggageSort.MainPage);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -186,7 +194,23 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
         private object Activate_0_ViewModel() { return new global::BaggageSort.ModelView.ViewModel(); }
         private object Activate_1_ViewModelBase() { return new global::BaggageSort.ModelView.ViewModelBase(); }
         private object Activate_3_SwitchStateCommand() { return new global::BaggageSort.ModelView.Commands.SwitchStateCommand(); }
-        private object Activate_4_MainPage() { return new global::BaggageSort.MainPage(); }
+        private object Activate_4_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::BaggageSort.Model.Sorter>(); }
+        private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::BaggageSort.Model.Sorter>(); }
+        private object Activate_6_Sorter() { return new global::BaggageSort.Model.Sorter(); }
+        private object Activate_7_Queue() { return new global::System.Collections.Generic.Queue<global::BaggageSort.Types.Luggage>(); }
+        private object Activate_8_MainPage() { return new global::BaggageSort.MainPage(); }
+        private void VectorAdd_4_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::BaggageSort.Model.Sorter>)instance;
+            var newItem = (global::BaggageSort.Model.Sorter)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_5_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::BaggageSort.Model.Sorter>)instance;
+            var newItem = (global::BaggageSort.Model.Sorter)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -202,6 +226,7 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
                 userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BaggageSort.ModelView.ViewModelBase"));
                 userType.Activator = Activate_0_ViewModel;
                 userType.AddMemberName("switchStateCommand");
+                userType.AddMemberName("SorterCollection");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -224,18 +249,46 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  BaggageSort.MainPage
-                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+            case 4:   //  System.Collections.ObjectModel.ObservableCollection`1<BaggageSort.Model.Sorter>
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<BaggageSort.Model.Sorter>"));
+                userType.CollectionAdd = VectorAdd_4_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 5:   //  System.Collections.ObjectModel.Collection`1<BaggageSort.Model.Sorter>
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_5_Collection;
+                userType.CollectionAdd = VectorAdd_5_Collection;
+                xamlType = userType;
+                break;
+
+            case 6:   //  BaggageSort.Model.Sorter
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_6_Sorter;
+                userType.AddMemberName("LuggageQueue");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Windows.UI.Xaml.Controls.Page
+            case 7:   //  System.Collections.Generic.Queue`1<BaggageSort.Types.Luggage>
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 8:   //  BaggageSort.MainPage
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Controls.UserControl
+            case 10:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -253,6 +306,26 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
             var that = (global::BaggageSort.ModelView.ViewModel)instance;
             that.switchStateCommand = (global::BaggageSort.ModelView.Commands.SwitchStateCommand)Value;
         }
+        private object get_1_ViewModel_SorterCollection(object instance)
+        {
+            var that = (global::BaggageSort.ModelView.ViewModel)instance;
+            return that.SorterCollection;
+        }
+        private void set_1_ViewModel_SorterCollection(object instance, object Value)
+        {
+            var that = (global::BaggageSort.ModelView.ViewModel)instance;
+            that.SorterCollection = (global::System.Collections.ObjectModel.ObservableCollection<global::BaggageSort.Model.Sorter>)Value;
+        }
+        private object get_2_Sorter_LuggageQueue(object instance)
+        {
+            var that = (global::BaggageSort.Model.Sorter)instance;
+            return that.LuggageQueue;
+        }
+        private void set_2_Sorter_LuggageQueue(object instance, object Value)
+        {
+            var that = (global::BaggageSort.Model.Sorter)instance;
+            that.LuggageQueue = (global::System.Collections.Generic.Queue<global::BaggageSort.Types.Luggage>)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -266,6 +339,18 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
                 xamlMember = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMember(this, "switchStateCommand", "BaggageSort.ModelView.Commands.SwitchStateCommand");
                 xamlMember.Getter = get_0_ViewModel_switchStateCommand;
                 xamlMember.Setter = set_0_ViewModel_switchStateCommand;
+                break;
+            case "BaggageSort.ModelView.ViewModel.SorterCollection":
+                userType = (global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaggageSort.ModelView.ViewModel");
+                xamlMember = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMember(this, "SorterCollection", "System.Collections.ObjectModel.ObservableCollection`1<BaggageSort.Model.Sorter>");
+                xamlMember.Getter = get_1_ViewModel_SorterCollection;
+                xamlMember.Setter = set_1_ViewModel_SorterCollection;
+                break;
+            case "BaggageSort.Model.Sorter.LuggageQueue":
+                userType = (global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaggageSort.Model.Sorter");
+                xamlMember = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMember(this, "LuggageQueue", "System.Collections.Generic.Queue`1<BaggageSort.Types.Luggage>");
+                xamlMember.Getter = get_2_Sorter_LuggageQueue;
+                xamlMember.Setter = set_2_Sorter_LuggageQueue;
                 break;
             }
             return xamlMember;
