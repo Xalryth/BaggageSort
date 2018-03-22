@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\BaggageSort.csproj;x86
+=======
+C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\BaggageSort.csproj;x86
+>>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
