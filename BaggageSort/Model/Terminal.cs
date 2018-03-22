@@ -8,5 +8,6 @@ namespace BaggageSort.Model
 {
     class Terminal
     {
+
     }
 }
