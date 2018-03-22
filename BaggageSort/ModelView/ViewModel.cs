@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 using BaggageSort.Types;
 using BaggageSort.ModelView.Commands;
 using BaggageSort.Model;
+using System.Collections.ObjectModel;
 
 namespace BaggageSort.ModelView
 {
     public class ViewModel : ViewModelBase
     {
+        public ObservableCollection<Sorter> sorterCollection = new ObservableCollection<Sorter>();
+
         public SwitchStateCommand switchStateCommand { get; set; }
 
         public ViewModel()

@@ -5,8 +5,10 @@
       <RootProperty Name="RequestedTheme" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="BaggageSort.ModelView.ViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="ColumnDefinitions" />
@@ -24,19 +26,11 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemsPanel" />
-<<<<<<< HEAD
-=======
       <RootProperty Name="ItemTemplate" />
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
     </RootType>
-<<<<<<< HEAD
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
-=======
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsWrapGrid">
       <RootProperty Name="Orientation" />
     </RootType>
@@ -54,7 +48,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
     </RootType>
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     <RootType FullName="BaggageSort.MainPage" />
   </Roots.RootTypes>
 </Roots>

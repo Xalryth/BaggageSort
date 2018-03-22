@@ -16191,10 +16191,10 @@
       "type": "package",
       "path": "microsoft.net.native.compiler/1.7.3",
       "files": [
-        "Microsoft.Net.Native.Compiler.1.7.3.nupkg.sha512",
-        "Microsoft.Net.Native.Compiler.nuspec",
         "build/Microsoft.Net.Native.Compiler.props",
         "build/Microsoft.Net.Native.Compiler.targets",
+        "microsoft.net.native.compiler.1.7.3.nupkg.sha512",
+        "microsoft.net.native.compiler.nuspec",
         "tools/LibraryXML/Callisto.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Extras.Win8.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Win8.rd.xml",
@@ -17089,10 +17089,10 @@
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-arm/1.7.0",
       "files": [
-        "Microsoft.Net.Native.SharedLibrary-arm.1.7.0.nupkg.sha512",
-        "Microsoft.Net.Native.SharedLibrary-arm.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-arm.props",
         "build/Microsoft.Net.Native.SharedLibrary-arm.targets",
+        "microsoft.net.native.sharedlibrary-arm.1.7.0.nupkg.sha512",
+        "microsoft.net.native.sharedlibrary-arm.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -17487,10 +17487,10 @@
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-x64/1.7.0",
       "files": [
-        "Microsoft.Net.Native.SharedLibrary-x64.1.7.0.nupkg.sha512",
-        "Microsoft.Net.Native.SharedLibrary-x64.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-x64.props",
         "build/Microsoft.Net.Native.SharedLibrary-x64.targets",
+        "microsoft.net.native.sharedlibrary-x64.1.7.0.nupkg.sha512",
+        "microsoft.net.native.sharedlibrary-x64.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -17885,10 +17885,10 @@
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-x86/1.7.0",
       "files": [
-        "Microsoft.Net.Native.SharedLibrary-x86.1.7.0.nupkg.sha512",
-        "Microsoft.Net.Native.SharedLibrary-x86.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-x86.props",
         "build/Microsoft.Net.Native.SharedLibrary-x86.targets",
+        "microsoft.net.native.sharedlibrary-x86.1.7.0.nupkg.sha512",
+        "microsoft.net.native.sharedlibrary-x86.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -25569,62 +25569,21 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\zbcdedup1\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\zbcpestr2\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
-=======
-    "C:\\Users\\ZBC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
->>>>>>> 92b4c2ae58cbad8d73c35a780ae5f3d0c2978e7a
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\zbcdedup1\\Documents\\GitHub\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
       "projectName": "BaggageSort",
       "projectPath": "C:\\Users\\zbcdedup1\\Documents\\GitHub\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
       "packagesPath": "C:\\Users\\zbcdedup1\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\zbcdedup1\\Documents\\GitHub\\BaggageSort\\BaggageSort\\obj\\",
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "projectName": "BaggageSort",
-      "projectPath": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "packagesPath": "C:\\Users\\zbcpestr2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zbcpestr2\\source\\repos\\BaggageSort\\BaggageSort\\obj\\",
-      "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
-      "configFilePaths": [
-        "C:\\Users\\zbcpestr2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "projectName": "BaggageSort",
-      "projectPath": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\BaggageSort.csproj",
-      "packagesPath": "C:\\Users\\ZBC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZBC\\source\\repos\\BaggageSort\\BaggageSort\\obj\\",
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\zbcdedup1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
-        "C:\\Users\\ZBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 3fab999f3b94c2943b220261374db1318b621164
->>>>>>> 92b4c2ae58cbad8d73c35a780ae5f3d0c2978e7a
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
       ],
       "originalTargetFrameworks": [
         "uap10.0.15063"

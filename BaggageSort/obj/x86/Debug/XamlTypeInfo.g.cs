@@ -8,45 +8,23 @@
 //------------------------------------------------------------------------------
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
 namespace BaggageSort
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-<<<<<<< HEAD
     private global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider _provider;
-=======
-        private global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMetaDataProvider __appProvider;
-        private global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMetaDataProvider _AppProvider
-        {
-            get
-            {
-                if (__appProvider == null)
-                {
-                    __appProvider = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMetaDataProvider();
-                }
-                return __appProvider;
-            }
-        }
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
 
         /// <summary>
         /// GetXamlType(Type)
         /// </summary>
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
-<<<<<<< HEAD
             if(_provider == null)
             {
                 _provider = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
-=======
-            return _AppProvider.GetXamlType(type);
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
         }
 
         /// <summary>
@@ -54,15 +32,11 @@ namespace BaggageSort
         /// </summary>
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(string fullName)
         {
-<<<<<<< HEAD
             if(_provider == null)
             {
                 _provider = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
-=======
-            return _AppProvider.GetXamlType(fullName);
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
         }
 
         /// <summary>
@@ -70,68 +44,14 @@ namespace BaggageSort
         /// </summary>
         public global::Windows.UI.Xaml.Markup.XmlnsDefinition[] GetXmlnsDefinitions()
         {
-<<<<<<< HEAD
             return new global::Windows.UI.Xaml.Markup.XmlnsDefinition[0];
-=======
-            return _AppProvider.GetXmlnsDefinitions();
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
         }
     }
 }
 
 namespace BaggageSort.BaggageSort_XamlTypeInfo
 {
-<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-=======
-    /// <summary>
-    /// Main class for providing metadata for the app or library
-    /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public sealed class XamlMetaDataProvider : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
-    {
-        private global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
-
-        private global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider Provider
-        {
-            get
-            {
-                if (_provider == null)
-                {
-                    _provider = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider();
-                }
-                return _provider;
-            }
-        }
-
-        /// <summary>
-        /// GetXamlType(Type)
-        /// </summary>
-        public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
-        {
-            return Provider.GetXamlTypeByType(type);
-        }
-
-        /// <summary>
-        /// GetXamlType(String)
-        /// </summary>
-        public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(string fullName)
-        {
-            return Provider.GetXamlTypeByName(fullName);
-        }
-
-        /// <summary>
-        /// GetXmlnsDefinitions()
-        /// </summary>
-        public global::Windows.UI.Xaml.Markup.XmlnsDefinition[] GetXmlnsDefinitions()
-        {
-            return new global::Windows.UI.Xaml.Markup.XmlnsDefinition[0];
-        }
-    }
-
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal partial class XamlTypeInfoProvider
     {
@@ -212,15 +132,23 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "BaggageSort.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "BaggageSort.ModelView.ViewModel";
+            _typeNameTable[1] = "BaggageSort.ModelView.ViewModelBase";
+            _typeNameTable[2] = "Object";
+            _typeNameTable[3] = "BaggageSort.ModelView.Commands.SwitchStateCommand";
+            _typeNameTable[4] = "BaggageSort.MainPage";
+            _typeNameTable[5] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[6] = "Windows.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::BaggageSort.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::BaggageSort.ModelView.ViewModel);
+            _typeTable[1] = typeof(global::BaggageSort.ModelView.ViewModelBase);
+            _typeTable[2] = typeof(global::System.Object);
+            _typeTable[3] = typeof(global::BaggageSort.ModelView.Commands.SwitchStateCommand);
+            _typeTable[4] = typeof(global::BaggageSort.MainPage);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -255,7 +183,10 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::BaggageSort.MainPage(); }
+        private object Activate_0_ViewModel() { return new global::BaggageSort.ModelView.ViewModel(); }
+        private object Activate_1_ViewModelBase() { return new global::BaggageSort.ModelView.ViewModelBase(); }
+        private object Activate_3_SwitchStateCommand() { return new global::BaggageSort.ModelView.Commands.SwitchStateCommand(); }
+        private object Activate_4_MainPage() { return new global::BaggageSort.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -267,18 +198,44 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  BaggageSort.MainPage
-                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  BaggageSort.ModelView.ViewModel
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("BaggageSort.ModelView.ViewModelBase"));
+                userType.Activator = Activate_0_ViewModel;
+                userType.AddMemberName("switchStateCommand");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  BaggageSort.ModelView.ViewModelBase
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_1_ViewModelBase;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 2:   //  Object
                 xamlType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 3:   //  BaggageSort.ModelView.Commands.SwitchStateCommand
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  BaggageSort.MainPage
+                userType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -286,20 +243,36 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
         }
 
 
+        private object get_0_ViewModel_switchStateCommand(object instance)
+        {
+            var that = (global::BaggageSort.ModelView.ViewModel)instance;
+            return that.switchStateCommand;
+        }
+        private void set_0_ViewModel_switchStateCommand(object instance, object Value)
+        {
+            var that = (global::BaggageSort.ModelView.ViewModel)instance;
+            that.switchStateCommand = (global::BaggageSort.ModelView.Commands.SwitchStateCommand)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "BaggageSort.ModelView.ViewModel.switchStateCommand":
+                userType = (global::BaggageSort.BaggageSort_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaggageSort.ModelView.ViewModel");
+                xamlMember = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMember(this, "switchStateCommand", "BaggageSort.ModelView.Commands.SwitchStateCommand");
+                xamlMember.Getter = get_0_ViewModel_switchStateCommand;
+                xamlMember.Setter = set_0_ViewModel_switchStateCommand;
+                break;
+            }
             return xamlMember;
         }
     }
 
-<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-=======
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlSystemBaseType : global::Windows.UI.Xaml.Markup.IXamlType
     {
@@ -347,11 +320,7 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
     internal delegate void AddToDictionary(object instance, object key, object item);
     internal delegate object CreateFromStringMethod(string args);
 
-<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-=======
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlUserType : global::BaggageSort.BaggageSort_XamlTypeInfo.XamlSystemBaseType
     {
@@ -562,11 +531,7 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
     internal delegate object Getter(object instance);
     internal delegate void Setter(object instance, object value);
 
-<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-=======
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
