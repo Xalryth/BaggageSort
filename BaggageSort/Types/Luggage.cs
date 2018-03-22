@@ -8,9 +8,9 @@ namespace BaggageSort.Types
 {
     public struct Luggage
     {
-        UInt32 id;
-        DateTime date;
-        Destination destination;
+        public UInt32 id;
+        public DateTime date;
+        public Destination destination;
 
         public Luggage(uint id, DateTime date, Destination destination)
         {
