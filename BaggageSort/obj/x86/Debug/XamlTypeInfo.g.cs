@@ -8,17 +8,10 @@
 //------------------------------------------------------------------------------
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
 namespace BaggageSort
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-<<<<<<< HEAD
-    private global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider _provider;
-=======
         private global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMetaDataProvider __appProvider;
         private global::BaggageSort.BaggageSort_XamlTypeInfo.XamlMetaDataProvider _AppProvider
         {
@@ -31,22 +24,13 @@ namespace BaggageSort
                 return __appProvider;
             }
         }
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
 
         /// <summary>
         /// GetXamlType(Type)
         /// </summary>
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
-<<<<<<< HEAD
-            if(_provider == null)
-            {
-                _provider = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider();
-            }
-            return _provider.GetXamlTypeByType(type);
-=======
             return _AppProvider.GetXamlType(type);
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
         }
 
         /// <summary>
@@ -54,15 +38,7 @@ namespace BaggageSort
         /// </summary>
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(string fullName)
         {
-<<<<<<< HEAD
-            if(_provider == null)
-            {
-                _provider = new global::BaggageSort.BaggageSort_XamlTypeInfo.XamlTypeInfoProvider();
-            }
-            return _provider.GetXamlTypeByName(fullName);
-=======
             return _AppProvider.GetXamlType(fullName);
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
         }
 
         /// <summary>
@@ -70,20 +46,13 @@ namespace BaggageSort
         /// </summary>
         public global::Windows.UI.Xaml.Markup.XmlnsDefinition[] GetXmlnsDefinitions()
         {
-<<<<<<< HEAD
-            return new global::Windows.UI.Xaml.Markup.XmlnsDefinition[0];
-=======
             return _AppProvider.GetXmlnsDefinitions();
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
         }
     }
 }
 
 namespace BaggageSort.BaggageSort_XamlTypeInfo
 {
-<<<<<<< HEAD
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-=======
     /// <summary>
     /// Main class for providing metadata for the app or library
     /// </summary>
@@ -131,7 +100,6 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
     }
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal partial class XamlTypeInfoProvider
     {
@@ -295,11 +263,7 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
         }
     }
 
-<<<<<<< HEAD
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-=======
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlSystemBaseType : global::Windows.UI.Xaml.Markup.IXamlType
     {
@@ -347,11 +311,7 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
     internal delegate void AddToDictionary(object instance, object key, object item);
     internal delegate object CreateFromStringMethod(string args);
 
-<<<<<<< HEAD
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-=======
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlUserType : global::BaggageSort.BaggageSort_XamlTypeInfo.XamlSystemBaseType
     {
@@ -562,11 +522,7 @@ namespace BaggageSort.BaggageSort_XamlTypeInfo
     internal delegate object Getter(object instance);
     internal delegate void Setter(object instance, object value);
 
-<<<<<<< HEAD
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
-=======
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
->>>>>>> f199d3edc52fdc003727089dbc36b0984d7f9ca7
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
