@@ -26,7 +26,7 @@ namespace BaggageSort.Model
         public Terminal(Enum _dest)
         {
             destination = _dest;
-            // leavedate?
+            LeaveDate = Reception.DateStep; // messy messy code
         }
         /// <summary>
         /// Handles luggage from sorting
