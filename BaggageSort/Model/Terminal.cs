@@ -38,10 +38,18 @@ namespace BaggageSort.Model
         /// <param name="_luggage"></param>
         public void HandleLuggage(Luggage _luggage)
         {
-            if (!Locked && luggages.Count() < CargoSize)
-                luggages.Enqueue(_luggage);
+            if (_luggage.date.Date >= DateTime.Now.Date)
+            {
+
+                if (!Locked && luggages.Count() < CargoSize)
+                    luggages.Enqueue(_luggage);
+                else
+                    leftOverLuggage.Enqueue(_luggage);
+            }
             else
+            {
                 leftOverLuggage.Enqueue(_luggage);
+            }
         }
         private void FillFlight()
         {
@@ -57,15 +65,17 @@ namespace BaggageSort.Model
         public void SwitchState()
         {
             locked = !locked;
-            Debug.WriteLine($"User locked: {locked}");
+            Debug.WriteLine($"Terminal locked: {locked}");
         }
         private async void TimeManager()
         {
             while (true)
-            {
-                await Task.Delay(TimeSpan.FromMinutes(new Random().Next(2,5)));
+
+                // Check the leave time instead ! TODO
                 if (!flightAvailable)
                 {
+                    await Task.Delay(TimeSpan.FromMinutes(new Random().Next(2, 5)));
+                    CheckLeftOvers();
                     locked = false;
                     flightAvailable = true;
                 }
@@ -74,7 +84,19 @@ namespace BaggageSort.Model
                     Fly();
                     await Task.Delay(TimeSpan.FromSeconds(30));
                 }
+        }
+        private void CheckLeftOvers()
+        {
+            int capa = LeftOverLuggage.Count();
+            for (int i = 0; i < capa; i++)
+            {
+                if (LeftOverLuggage.Peek().date.Date >= DateTime.Now.Date)
+                {
+                    Luggages.Enqueue(LeftOverLuggage.Dequeue());
+                    capa--;
+                }
             }
         }
     }
 }
+
