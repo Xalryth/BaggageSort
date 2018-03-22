@@ -1,0 +1,11 @@
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\BaggageSort.csprojResolveAssemblyReference.cache
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\App.g.i.cs
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\App.g.cs
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\MainPage.g.i.cs
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\MainPage.g.cs
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\XamlTypeInfo.g.cs
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\App.xaml
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\MainPage.xaml
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\App.xbf
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\MainPage.xbf
+C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\XamlSaveStateFile.xml
