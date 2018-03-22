@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BaggageSort.Model
 {
-    public class Terminal
+    public class Luggage
     {
     }
 }

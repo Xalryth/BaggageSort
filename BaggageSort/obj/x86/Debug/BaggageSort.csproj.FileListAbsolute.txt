@@ -211,3 +211,16 @@ C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\obj\x86\Debug\qualifiers
 C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\BaggageSort.csprojResolveAssemblyReference.cache
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\App.g.i.cs
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\App.g.cs
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\MainPage.g.cs
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\App.xaml
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\MainPage.xaml
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\App.xbf
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\MainPage.xbf
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\BaggageSort.exe
+C:\Users\zbcdedup1\Documents\GitHub\BaggageSort\BaggageSort\obj\x86\Debug\BaggageSort.pdb
