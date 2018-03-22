@@ -50,14 +50,6 @@ namespace BaggageSort.Model
         private void Fly()
         {
             Debug.WriteLine($"Plane to {Destination.ToString()} is flying away");
-<<<<<<< HEAD
-            Locked = true;
-        }
-        public void SwitchState()
-        {
-            Debug.WriteLine("User locked the terminal");
-            Locked = true;
-=======
             FillFlight();
             locked = true;
             flightAvailable = false;
@@ -83,7 +75,6 @@ namespace BaggageSort.Model
                     await Task.Delay(TimeSpan.FromSeconds(30));
                 }
             }
->>>>>>> bd6625e312a5dce69443b2915f57556e963855b5
         }
     }
 }
