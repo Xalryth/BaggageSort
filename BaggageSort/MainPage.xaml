@@ -8,6 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-    </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <ListView Grid.Column="0">
+            <!--  -->
+        </ListView>
+        <ListView Grid.Column="1" >
+            <ListViewItem>
+                
+            </ListViewItem>
+        </ListView>
+        </Grid>
 </Page>
