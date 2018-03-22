@@ -7,7 +7,7 @@ using BaggageSort.Types;
 
 namespace BaggageSort.Model
 {
-    class Reception
+    public class Reception
     {
         uint count = 0;
         uint dateStep = 0;
