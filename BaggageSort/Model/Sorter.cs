@@ -13,17 +13,20 @@ namespace BaggageSort.Model
         private static List<Terminal> terminalList = new List<Terminal>();
         
 
-        public Queue<Luggage> LuggageQueue
-        {
-            get { return luggageQueue; }
-            set { luggageQueue = value; }
-        }
+        //public Queue<Luggage> LuggageQueue
+        //{
+        //    get { return luggageQueue; }
+        //    set { luggageQueue = value; }
+        //}
 
-        public static List<Terminal> TerminalList
-        {
-            get { return terminalList; }
-            set { terminalList = value; }
-        }
+        //public static List<Terminal> TerminalList
+        //{
+        //    get { return terminalList; }
+        //    set { terminalList = value; }
+        //}
+
+        public Queue<Luggage> LuggageQueue { get => luggageQueue; set => luggageQueue = value; }
+        public List<Terminal> TerminalList { get => terminalList; set => terminalList = value; }
 
         public Sorter()
         {
@@ -38,13 +41,13 @@ namespace BaggageSort.Model
 
         public void SortLuggage()
         {
-            for (int i = 0; i < luggageQueue.Count; i++)
+            for (int i = 0; i < LuggageQueue.Count; i++)
             {
-                for (int j = 0; j < terminalList.Count; j++)
+                for (int j = 0; j < TerminalList.Count; j++)
                 {
-                    if (luggageQueue.Peek().destination == (Destination)terminalList[j].Destination)
+                    if (LuggageQueue.Peek().destination == (Destination)TerminalList[j].Destination)
                     {
-                        terminalList[i].Luggages.Enqueue(luggageQueue.Dequeue());
+                        TerminalList[i].Luggages.Enqueue(LuggageQueue.Dequeue());
                         break;
                     }
                 }
