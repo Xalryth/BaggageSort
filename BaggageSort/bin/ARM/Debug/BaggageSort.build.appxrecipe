@@ -6,26 +6,41 @@
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
-    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
-    <PackageArchitecture>x86</PackageArchitecture>
+    <SolutionConfiguration>Debug|ARM</SolutionConfiguration>
+    <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>bd2400db-e4dd-42c9-b1de-08dbbd0915d0</PackageIdentityName>
     <PackageIdentityPublisher>CN=zbcpestr2</PackageIdentityPublisher>
+<<<<<<< HEAD:BaggageSort/bin/x86/Debug/BaggageSort.build.appxrecipe
     <IntermediateOutputPath>C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\obj\x86\Debug\</IntermediateOutputPath>
+=======
+    <IntermediateOutputPath>C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\obj\ARM\Debug\</IntermediateOutputPath>
+>>>>>>> ebec886bf90cdf12d382267d2d03f3ad7136756d:BaggageSort/bin/ARM/Debug/BaggageSort.build.appxrecipe
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+<<<<<<< HEAD:BaggageSort/bin/x86/Debug/BaggageSort.build.appxrecipe
     <LayoutDir>C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\bin\x86\Debug\Core\AppxManifest.xml">
+=======
+    <LayoutDir>C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\bin\ARM\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\bin\ARM\Debug\Core\AppxManifest.xml">
+>>>>>>> ebec886bf90cdf12d382267d2d03f3ad7136756d:BaggageSort/bin/ARM/Debug/BaggageSort.build.appxrecipe
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:BaggageSort/bin/x86/Debug/BaggageSort.build.appxrecipe
     <AppxPackagedFile Include="C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\bin\x86\Debug\BaggageSort.exe">
+=======
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\bin\ARM\Debug\BaggageSort.exe">
+>>>>>>> ebec886bf90cdf12d382267d2d03f3ad7136756d:BaggageSort/bin/ARM/Debug/BaggageSort.build.appxrecipe
       <PackagePath>entrypoint\BaggageSort.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zbcpestr2\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -139,6 +154,7 @@
     <AppxPackagedFile Include="C:\Users\zbcpestr2\.nuget\packages\runtime.win.system.runtime.extensions\4.1.0\runtimes\win\lib\netcore50\System.Runtime.Extensions.dll">
       <PackagePath>System.Runtime.Extensions.dll</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD:BaggageSort/bin/x86/Debug/BaggageSort.build.appxrecipe
     <AppxPackagedFile Include="C:\Users\zbcpestr2\.nuget\packages\runtime.win7-x86.microsoft.netcore.jit\1.0.3\runtimes\win7-x86\native\clrjit.dll">
       <PackagePath>clrjit.dll</PackagePath>
     </AppxPackagedFile>
@@ -149,6 +165,15 @@
       <PackagePath>System.Private.Uri.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zbcpestr2\.nuget\packages\system.appcontext\4.1.0\lib\netcore50\System.AppContext.dll">
+=======
+    <AppxPackagedFile Include="C:\Users\ZBC\.nuget\packages\runtime.win7.system.private.uri\4.0.2\runtimes\win\lib\netcore50\System.Private.Uri.dll">
+      <PackagePath>System.Private.Uri.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\.nuget\packages\runtime.win8-arm.runtime.native.system.io.compression\4.0.1\runtimes\win8-arm\native\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\.nuget\packages\system.appcontext\4.1.0\lib\netcore50\System.AppContext.dll">
+>>>>>>> ebec886bf90cdf12d382267d2d03f3ad7136756d:BaggageSort/bin/ARM/Debug/BaggageSort.build.appxrecipe
       <PackagePath>System.AppContext.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zbcpestr2\.nuget\packages\system.buffers\4.0.0\lib\netstandard1.1\System.Buffers.dll">
@@ -370,6 +395,7 @@
     <AppxPackagedFile Include="C:\Users\zbcpestr2\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD:BaggageSort/bin/x86/Debug/BaggageSort.build.appxrecipe
     <AppxPackagedFile Include="C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -401,16 +427,57 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\bin\x86\Debug\BaggageSort.xr.xml">
+=======
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\bin\ARM\Debug\BaggageSort.xr.xml">
+>>>>>>> ebec886bf90cdf12d382267d2d03f3ad7136756d:BaggageSort/bin/ARM/Debug/BaggageSort.build.appxrecipe
       <PackagePath>BaggageSort.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD:BaggageSort/bin/x86/Debug/BaggageSort.build.appxrecipe
     <AppxPackagedFile Include="C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zbcpestr2\source\repos\BaggageSort\BaggageSort\bin\x86\Debug\Core\BaggageSort.exe">
+=======
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\bin\ARM\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ZBC\Source\Repos\BaggageSort\BaggageSort\bin\ARM\Debug\Core\BaggageSort.exe">
+>>>>>>> ebec886bf90cdf12d382267d2d03f3ad7136756d:BaggageSort/bin/ARM/Debug/BaggageSort.build.appxrecipe
       <PackagePath>BaggageSort.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

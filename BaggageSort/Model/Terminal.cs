@@ -24,6 +24,7 @@ namespace BaggageSort.Model
         public Queue<Luggage> LeftOverLuggage { get => leftOverLuggage; private set => leftOverLuggage = value; }
         public int CargoSize { get => cargoSize; private set => cargoSize = value; }
         public bool Locked { get => locked; set => locked = value; }
+        public bool FlightAvailable { get => flightAvailable; set => flightAvailable = value; }
 
         public Terminal(Enum _dest)
         {
@@ -38,10 +39,18 @@ namespace BaggageSort.Model
         /// <param name="_luggage"></param>
         public void HandleLuggage(Luggage _luggage)
         {
-            if (!Locked && luggages.Count() < CargoSize)
-                luggages.Enqueue(_luggage);
+            if (_luggage.date.Date >= DateTime.Now.Date)
+            {
+
+                if (!Locked && luggages.Count() < CargoSize)
+                    luggages.Enqueue(_luggage);
+                else
+                    leftOverLuggage.Enqueue(_luggage);
+            }
             else
+            {
                 leftOverLuggage.Enqueue(_luggage);
+            }
         }
         private void FillFlight()
         {
@@ -52,29 +61,52 @@ namespace BaggageSort.Model
             Debug.WriteLine($"Plane to {Destination.ToString()} is flying away");
             FillFlight();
             locked = true;
-            flightAvailable = false;
+            FlightAvailable = false;
         }
+        /// <summary>
+        /// Used for locking/unlocking the terminal
+        /// </summary>
         public void SwitchState()
         {
             locked = !locked;
-            Debug.WriteLine($"User locked: {locked}");
+            Debug.WriteLine($"Terminal locked: {locked}");
         }
+        /// <summary>
+        /// Task that simulates flight times - when time is up the Task sends the plane away
+        /// </summary>
         private async void TimeManager()
         {
             while (true)
-            {
-                await Task.Delay(TimeSpan.FromMinutes(new Random().Next(2,5)));
-                if (!flightAvailable)
+
+                // Check the leave time instead ! TODO
+                if (!FlightAvailable)
                 {
+                    await Task.Delay(TimeSpan.FromMinutes(new Random().Next(2, 5)));
+                    CheckLeftOvers();
                     locked = false;
-                    flightAvailable = true;
+                    FlightAvailable = true;
                 }
                 else
                 {
                     Fly();
                     await Task.Delay(TimeSpan.FromSeconds(30));
                 }
+        }
+        /// <summary>
+        /// Controls the leftoverluggages for luggage that needs to be on the next flight.
+        /// </summary>
+        private void CheckLeftOvers()
+        {
+            int capa = LeftOverLuggage.Count();
+            for (int i = 0; i < capa; i++)
+            {
+                if (LeftOverLuggage.Peek().date.Date >= DateTime.Now.Date)
+                {
+                    Luggages.Enqueue(LeftOverLuggage.Dequeue());
+                    capa--;
+                }
             }
         }
     }
 }
+

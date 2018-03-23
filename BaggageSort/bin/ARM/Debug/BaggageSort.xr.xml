@@ -60,6 +60,12 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
+<<<<<<< HEAD:BaggageSort/bin/x86/Debug/BaggageSort.xr.xml
+=======
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+    </RootType>
+>>>>>>> ebec886bf90cdf12d382267d2d03f3ad7136756d:BaggageSort/bin/ARM/Debug/BaggageSort.xr.xml
     <RootType FullName="BaggageSort.MainPage" />
   </Roots.RootTypes>
 </Roots>

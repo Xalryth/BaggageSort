@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="bd2400db-e4dd-42c9-b1de-08dbbd0915d0" Publisher="CN=zbcpestr2" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="bd2400db-e4dd-42c9-b1de-08dbbd0915d0" Publisher="CN=zbcpestr2" Version="1.0.0.0" ProcessorArchitecture="arm" />
   <mp:PhoneIdentity PhoneProductId="bd2400db-e4dd-42c9-b1de-08dbbd0915d0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>BaggageSort</DisplayName>
