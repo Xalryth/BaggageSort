@@ -23,12 +23,14 @@ namespace BaggageSort.ModelView
             {
                 sorterCollection.Add(new Sorter());
             }
-            for (int i = 0; i < 5; i++)
-            {
-                Sorter.TerminalList.Add(new Terminal(Destination.Bornholm));
-                Sorter.TerminalList.Add(new Terminal(Destination.NewYork));
-                Sorter.TerminalList.Add(new Terminal(Destination.Dubai));
-            }
+
+            //Sorter.TerminalList.Add(new Terminal(Destination.Bornholm));
+            //Sorter.TerminalList.Add(new Terminal(Destination.NewYork));
+            //Sorter.TerminalList.Add(new Terminal(Destination.Dubai));
+            sorterCollection[0].TerminalList.Add(new Terminal(Destination.Bornholm));
+            sorterCollection[0].TerminalList.Add(new Terminal(Destination.NewYork));
+            sorterCollection[0].TerminalList.Add(new Terminal(Destination.Dubai));
+
             switchStateCommand = new SwitchStateCommand();
         }
 

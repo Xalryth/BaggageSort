@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BaggageSort.Model;
 
 namespace BaggageSort.Types
 {
@@ -12,11 +13,13 @@ namespace BaggageSort.Types
         public DateTime date;
         public Destination destination;
 
-        public Luggage(uint id, DateTime date, Destination destination)
+        public Luggage(uint id)
         {
+            Random rnd = new Random();
+
             this.id = id;
-            this.date = date;
-            this.destination = destination;
+            this.date = new DateTime(Reception.DateStep).AddDays(rnd.Next(0, 3));
+            destination = (Destination)rnd.Next(0, Enum.GetNames(typeof(Destination)).Length - 1);
         }
 
 
