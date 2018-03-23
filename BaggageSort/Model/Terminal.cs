@@ -24,6 +24,7 @@ namespace BaggageSort.Model
         public Queue<Luggage> LeftOverLuggage { get => leftOverLuggage; private set => leftOverLuggage = value; }
         public int CargoSize { get => cargoSize; private set => cargoSize = value; }
         public bool Locked { get => locked; set => locked = value; }
+        public bool FlightAvailable { get => flightAvailable; set => flightAvailable = value; }
 
         public Terminal(Enum _dest)
         {
@@ -60,24 +61,30 @@ namespace BaggageSort.Model
             Debug.WriteLine($"Plane to {Destination.ToString()} is flying away");
             FillFlight();
             locked = true;
-            flightAvailable = false;
+            FlightAvailable = false;
         }
+        /// <summary>
+        /// Used for locking/unlocking the terminal
+        /// </summary>
         public void SwitchState()
         {
             locked = !locked;
             Debug.WriteLine($"Terminal locked: {locked}");
         }
+        /// <summary>
+        /// Task that simulates flight times - when time is up the Task sends the plane away
+        /// </summary>
         private async void TimeManager()
         {
             while (true)
 
                 // Check the leave time instead ! TODO
-                if (!flightAvailable)
+                if (!FlightAvailable)
                 {
                     await Task.Delay(TimeSpan.FromMinutes(new Random().Next(2, 5)));
                     CheckLeftOvers();
                     locked = false;
-                    flightAvailable = true;
+                    FlightAvailable = true;
                 }
                 else
                 {
@@ -85,6 +92,9 @@ namespace BaggageSort.Model
                     await Task.Delay(TimeSpan.FromSeconds(30));
                 }
         }
+        /// <summary>
+        /// Controls the leftoverluggages for luggage that needs to be on the next flight.
+        /// </summary>
         private void CheckLeftOvers()
         {
             int capa = LeftOverLuggage.Count();
